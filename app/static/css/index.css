@@ -36,7 +36,30 @@ body {
             text-decoration: none;
             color: #3498db;
             font-weight: bold;
+            transition: ease 200ms;
         }
         a:hover {
             text-decoration: underline;
+        }
+
+        .links {
+            margin: 20px;
+            position:fixed;
+            bottom:10px;
+            gap:40px;
+            display: flex;
+            padding:10px 100px;
+            border-top: 1px solid #ddd;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .links a {
+            opacity: 65%;
+        }
+
+
+        .links a:hover {
+            color: #006bb3;
+            opacity: 100%;
         }
