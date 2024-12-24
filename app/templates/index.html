@@ -1,28 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Boilerplate</title>
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
-</head>
-<body>
-    <div class="container">
-        <h1>Welcome to Flask Boilerplate!</h1>
-        <p>Seamless developing experience.</p>
-        <p><a href="#">Get Started</a></p>
-    </div>
-    <section class="links">
-        <a href="https://flask.palletsprojects.com/en/stable/">Flask Documentation</a>
-        <a href="https://render.com/">Hosting</a>
-        <a href="https://fontawesome.com/">Icons</a>
-        <a href="https://unsplash.com/">Images</a>
-        <a href="https://fonts.google.com/">Fonts</a>
-        <a href="https://getbootstrap.com/">Bootstrap</a>
-        <a href="https://coolors.co/">Color Pallete</a>
-        <a href="https://caniuse.com/">Browser Support</a>
-        <a href="https://material.io/">Material</a>
-        <a href="https://github.com/">Github</a>
-    </section>
-</body>
-</html>
+{% extends 'layout.html' %}
+
+{% block title %}
+Homepage ~ FlaskBoilerplate
+{% endblock%}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+{% endblock%}
+
+
+{% block content%}
+<h1>Where Great Apps Begin</h1>
+<h2>Seamlessly</h2>
+{% endblock%}

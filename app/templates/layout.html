@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/base.css') }}">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    {% block head %}
+    {% endblock %}
+
+
+    <!-- Add any external libraries like Bootstrap or FontAwesome -->
+</head>
+<body>
+    <header>
+        <nav>
+            <span id="logo"><img src="{{ url_for('static', filename='images/logo.png') }}" height="50px"></span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        {% block content %}
+        {% endblock %}
+    
+
+
+
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+
+    </footer>
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+    <!-- Optional: Add external libraries like jQuery or Bootstrap -->
+</body>
+</html>

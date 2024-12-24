@@ -1,0 +1,63 @@
+@import "font.css";
+@import "reset.css";
+@import "variables.css";
+
+body {
+	background-color: var(--bg-color-200);
+}
+
+header nav {
+	padding: 30px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: var(--bg-color-200);
+	
+}
+
+header nav ul {
+	list-style: none;
+	display: flex;
+	gap: 2.5rem;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-family:"Varela Round", arial, sans-serif;
+	color: var(--accent-color-800);
+	position: relative;
+}
+
+header nav ul li a::after {
+	position: absolute;
+	content: " ";
+	z-index: 2;
+	height: 1px;
+	width: 5%;
+	left: 0;
+	bottom: 0;
+	background-color: var(--accent-color-800);
+	transition: ease 400ms;
+}
+
+header nav ul li a:hover::after {
+	width: 100%;
+}
+
+
+/* footer styles */
+footer {
+	background-color: var(--accent-color-400);
+	color: var(--accent-color-800);
+	font-family: Opens Sans, sans-serif;
+	text-align: center;
+	padding: 30px;
+}
+
+main {
+	margin: 20vh;
+}
