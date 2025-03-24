@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +20,13 @@
 
     <!-- Add any external libraries like Bootstrap or FontAwesome -->
 </head>
+
 <body>
     <header>
         <nav>
             <span id="logo"><img src="{{ url_for('static', filename='images/logo.png') }}" height="50px"></span>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
@@ -35,7 +37,7 @@
 
         {% block content %}
         {% endblock %}
-    
+
 
 
 
@@ -49,4 +51,5 @@
     <script src="script.js"></script>
     <!-- Optional: Add external libraries like jQuery or Bootstrap -->
 </body>
+
 </html>

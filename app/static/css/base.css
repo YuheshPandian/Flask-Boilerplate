@@ -15,7 +15,7 @@ header nav {
 	width: 100%;
 	top: 0;
 	background-color: var(--bg-color-200);
-	
+
 }
 
 header nav ul {
@@ -27,7 +27,7 @@ header nav ul {
 header nav ul li a {
 	text-decoration: none;
 	font-size: 1.2rem;
-	font-family:"Varela Round", arial, sans-serif;
+	font-family: "Varela Round", arial, sans-serif;
 	color: var(--accent-color-800);
 	position: relative;
 }
@@ -56,6 +56,10 @@ footer {
 	font-family: Opens Sans, sans-serif;
 	text-align: center;
 	padding: 30px;
+	position: fixed;
+	z-index: 100;
+	bottom: 0;
+	width: 100vw
 }
 
 main {
