@@ -49,11 +49,10 @@ flask-boilerplate/
     │-- config.py      # Main Flask application configuration
     |-- views.py       # Contains all routes of the site
     |-- __init__.py    # Basic registrations and setup
-    │-- requirements.txt # List of dependencies
     │-- README.md      # Project documentation
   run.py               # helps to run the site from the terminal easily
   errorlog.txt         # registers the errors that occur when debug is set to false
-
+  requirements.txt    # contains all dependencies for the project
 ```
 
 ## Contributing
