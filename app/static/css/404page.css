@@ -1,4 +1,27 @@
+main {
+  text-align: center;
+}
+
 h1 {
-  font-size:6.5 rem;
+  font-size: 5rem;
   font-family: Kanit, arial, sans-serif;
+}
+
+main p {
+  font-size: 1.5rem;
+  font-family: Open Sans, arial, sans-serif;
+  padding: 10px;
+  color: var(--accent-color-600);
+  margin-bottom: 50px;
+}
+
+main a {
+  text-decoration: none;
+  color: var(--accent-color-400);
+  opacity: 50%;
+}
+
+main a:hover {
+  opacity: 100%;
+  transition: 300ms ease-in;
 }

@@ -1,8 +1,9 @@
 :root {
-	--bg-color-200: #ffffff;  /*white*/
+	--bg-color-200: #ffffff;
+	/*white*/
 	--bg-color-400: #eeeeff;
 
-	--accent-color-800:#000000;
-	--accent-color-400:#eeeeef;
-	--accent-color-600:#aaaaaa;
+	--accent-color-800: #000000;
+	--accent-color-400: #838dad;
+	--accent-color-600: #6e6e6e;
 }

@@ -10,5 +10,11 @@
 
 
 {% block content%}
-<h1>Oops! You got lost</h1>
+<h1>404</h1>
+
+<p>Sorry, we couldn't find this page. But don't worry you can <br> find plenty of other things on <a
+                href="/">homepage</a>
+</p>
+
+<img src="{{ url_for('static',filename='images/error-404.png') }}" alt="404-icon" width="128px">
 {% endblock%}
