@@ -40,3 +40,32 @@ h2:hover {
 	color: var(--bg-color-200);
 	transition: 600ms ease-in-out;
 }
+
+main h1,
+h2,
+h2::after {
+	animation: fade_in linear 300ms;
+}
+
+@keyframes fade_in {
+	0% {
+		opacity: 0%;
+	}
+
+	25% {
+		opacity: 0%;
+	}
+
+	50% {
+		opacity: 0%;
+	}
+
+	75% {
+		opacity: 0%;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+
+}
