@@ -64,3 +64,5 @@ This project is licensed under the MIT License.
 ---
 Developed by [YuheshPandian](https://github.com/YuheshPandian) 🚀
 
+Please give a ⭐ if you think this boilerplate helped you
+
