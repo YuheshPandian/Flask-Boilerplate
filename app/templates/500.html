@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Something gone wrong
+{% endblock%}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/500page.css') }}">
+{% endblock%}
+
+
+{% block content%}
+<h1>Internal Server Error</h1>
+
+<img src="{{ url_for('static',filename='images/500.jpeg') }}" alt="500-icon" width="128px" style="opacity: 70%;">
+
+
+<p>Uh-oh looks like our server encountered an internal error or misconfiguration <br> and was unable to complete your
+    request. </p>
+{% endblock%}

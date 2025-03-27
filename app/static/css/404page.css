@@ -16,12 +16,12 @@ main p {
 }
 
 main a {
+  font-family: Kanit, arial;
   text-decoration: none;
-  color: var(--accent-color-400);
-  opacity: 50%;
+  color: var(--accent-color-600);
 }
 
 main a:hover {
-  opacity: 100%;
+  color: var(--accent-color-400);
   transition: 300ms ease-in;
 }

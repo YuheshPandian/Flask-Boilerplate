@@ -6,6 +6,7 @@ body {
 	background-color: var(--bg-color-200);
 }
 
+
 header nav {
 	padding: 30px 20px;
 	display: flex;
@@ -14,8 +15,9 @@ header nav {
 	position: fixed;
 	width: 100%;
 	top: 0;
+	z-index: 100;
 	background-color: var(--bg-color-200);
-
+	box-shadow: 0 0 4px rgba(199, 199, 199, 0.728);
 }
 
 header nav ul {

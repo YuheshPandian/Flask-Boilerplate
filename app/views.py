@@ -16,11 +16,19 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/r")
-def layout():
-    return render_template("layout.html")
+# from flask import abort
+
+
+# @app.route("/500")
+# def error500():
+#     return abort(500)
 
 
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("404.html"), 404
+
+
+@app.errorhandler(500)
+def internal_server_error(e):
+    return render_template("500.html"), 500
