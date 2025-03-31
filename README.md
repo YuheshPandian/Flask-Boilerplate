@@ -4,10 +4,11 @@
 This is a minimal yet powerful Flask boilerplate to kickstart your web applications. It provides a basic structure for developing and deploying Flask applications seamlessly.
 
 ## Features
-- Simple and clean folder structure
-- Pre-configured Flask setup
-- Basic routing and templates
-- Lightweight and easy to customize
+- **Simple and clean** folder structure
+- Pre-configured **Flask** setup
+- Basic **routing and templates**
+- **Lightweight** and easy to customize
+- custom **error pages**
 
 ## Installation
 
