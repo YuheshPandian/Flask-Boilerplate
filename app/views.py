@@ -9,9 +9,6 @@ from flask import render_template
 from app import app
 
 
-app.config.from_pyfile("config.py")
-
-
 if not app.debug:
     file_handler = FileHandler("errolog.txt")
     file_handler.setLevel(WARNING)
