@@ -36,7 +36,7 @@ def index():
 
 # 404 Error page
 @app.errorhandler(404)
-def page_not_found():
+def page_not_found(_):
     """
     returns the 404 errorpage of the site
     """
@@ -45,7 +45,7 @@ def page_not_found():
 
 # 500 error page
 @app.errorhandler(500)
-def internal_server_error():
+def internal_server_error(_):
     """
     returns the 500 errorpage of the site
     """
