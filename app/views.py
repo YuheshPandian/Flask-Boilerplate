@@ -3,8 +3,8 @@ This python file holds all the routes of the website.
 And also handles logging and error pages management
 """
 
-from flask import render_template, url_for
 from logging import FileHandler, WARNING
+from flask import render_template
 
 from app import app
 
@@ -19,11 +19,13 @@ if not app.debug:
     app.logger.addHandler(file_handler)
 
 
-# Home Page for the boilerplate
 @app.route("/")
 @app.route("/home")
 @app.route("/index")
 def index():
+    """
+    returns the homepage of the site
+    """
     return render_template("index.html")
 
 
@@ -38,10 +40,16 @@ def index():
 # 404 Error page
 @app.errorhandler(404)
 def page_not_found():
+    """
+    returns the 404 errorpage of the site
+    """
     return render_template("404.html"), 404
 
 
 # 500 error page
 @app.errorhandler(500)
 def internal_server_error():
+    """
+    returns the 500 errorpage of the site
+    """
     return render_template("500.html"), 500
