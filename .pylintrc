@@ -1,0 +1,5 @@
+[MASTER]
+disable=
+    cyclic-import,      # R0401
+    wrong-import-position, # C0413
+    import-error        
