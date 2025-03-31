@@ -2,6 +2,9 @@ from flask import render_template, url_for
 from app import app
 from logging import FileHandler, WARNING
 
+app.config.from_pyfile("config.py")
+
+
 if not app.debug:
     file_handler = FileHandler("errolog.txt")
     file_handler.setLevel(WARNING)
