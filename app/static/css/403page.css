@@ -1,0 +1,32 @@
+main {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: Kanit, arial, sans-serif;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-family: Kanit, arial, sans-serif;
+}
+
+main p {
+    font-size: 1.5rem;
+    font-family: Open Sans, arial, sans-serif;
+    padding: 10px;
+    color: var(--accent-color-600);
+    margin-bottom: 50px;
+}
+
+main a {
+    font-family: Kanit, arial;
+    text-decoration: none;
+    color: var(--accent-color-600);
+}
+
+main a:hover {
+    color: var(--accent-color-400);
+    transition: 300ms ease-in;
+}

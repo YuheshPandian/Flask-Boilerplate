@@ -29,9 +29,21 @@ def index():
 # from flask import abort
 
 
+# @app.route("/403")
+# def error403():
+#     return abort(403)
+
 # @app.route("/500")
 # def error500():
 #     return abort(500)
+
+
+@app.errorhandler(403)
+def forbidden(_):
+    """
+    returns the 403 errorpage of the site
+    """
+    return render_template("403.html"), 403
 
 
 # 404 Error page
