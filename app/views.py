@@ -36,25 +36,12 @@ def index():
 # def error500():
 #     return abort(500)
 
-# @app.route("/403")
-# def error403():
-#     return abort(403)
-
-
-# 403 Error page
-@app.errorhandler(403)
-def forbidden():
-    """
-    returns the 403 - forbidden errorpage of the site
-    """
-    return render_template("403.html"), 403
-
 
 # 404 Error page
 @app.errorhandler(404)
 def page_not_found():
     """
-    returns the 404 - not found errorpage of the site
+    returns the 404 errorpage of the site
     """
     return render_template("404.html"), 404
 
@@ -63,6 +50,6 @@ def page_not_found():
 @app.errorhandler(500)
 def internal_server_error():
     """
-    returns the 500 - internal server error errorpage of the site
+    returns the 500 errorpage of the site
     """
     return render_template("500.html"), 500
