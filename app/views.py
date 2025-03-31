@@ -1,3 +1,7 @@
+"""
+This python file holds all the routes of the website and also handles logging and error pages management
+"""
+
 from flask import render_template, url_for
 from app import app
 from logging import FileHandler, WARNING
@@ -28,10 +32,10 @@ def index():
 
 
 @app.errorhandler(404)
-def page_not_found(e):
+def page_not_found():
     return render_template("404.html"), 404
 
 
 @app.errorhandler(500)
-def internal_server_error(e):
+def internal_server_error():
     return render_template("500.html"), 500
