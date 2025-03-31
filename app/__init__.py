@@ -8,4 +8,10 @@ from flask import Flask
 app = Flask(__name__)
 
 app.config.from_pyfile("config.py")
-from app import views
+
+
+def register_views():
+    from app import views
+
+
+register_views()
