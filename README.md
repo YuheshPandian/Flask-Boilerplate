@@ -74,7 +74,7 @@ Feel free to fork the repository and submit pull requests. Contributions are alw
 This project is licensed under the MIT License.
 
 > [!Note]  
-> This project requires Python 3.10 or later. Please make sure it's installed before proceeding.
+> The latest stable version is 0.0.1
 
 ---
 
