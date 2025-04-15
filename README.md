@@ -74,7 +74,7 @@ Feel free to fork the repository and submit pull requests. Contributions are alw
 This project is licensed under the MIT License.
 
 > [!Note]  
-> The latest stable version is 0.0.1
+> The latest stable version is 0.0.2
 
 ---
 
